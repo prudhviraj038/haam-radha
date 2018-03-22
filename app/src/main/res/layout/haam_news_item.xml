@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mamacgroup.hamtest.HaamMergeSqureImageView
+            android:id="@+id/news_img_adp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44000000"
+            android:orientation="vertical"
+            android:layout_alignLeft="@+id/news_img_adp"
+            android:layout_alignBottom="@+id/news_img_adp"
+            android:layout_alignTop="@+id/news_img_adp"
+            android:layout_alignRight="@+id/news_img_adp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/back_ch_img"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                android:id="@+id/news_title_adp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:shadowColor="#000"
+                android:shadowRadius="5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/news_time_news"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_margin="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:shadowColor="#000"
+                android:shadowRadius="5" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

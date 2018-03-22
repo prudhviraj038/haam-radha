@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#A71C21</color>
+    <color name="colorPrimaryDark">#A71C21</color>
+
+
+
+    <color name="aa_app_blue">#A71C21</color>
+    <color name="aa_menu_bar">#696969</color>
+    <color name="aa_menu_bar_trans">#ffffff</color>
+    <color name="aa_menu_bar_icon">#727272</color>
+    <color name="aa_menu_line">#e1e1e1</color>
+    <color name="aa_menu_text">#696969</color>
+    <color name="aa_menu_text_selected">#A71C21</color>
+
+    <color name="settings_txt_color">#555555</color>
+    <color name="settings_txt_first">#000000</color>
+    <color name="settings_bg_color">#ecebf1</color>
+    <color name="settings_line_color">#e1e1e1</color>
+    <color name="settings_page_list_header">#00000000</color>
+    <color name="settings_page_list_tab">#FFFFFF</color>
+
+    <color name="open_in_browser">#e5e5e5</color>
+    <color name="open_in_browser_line">#969696</color>
+    <color name="open_in_browser_btn_clr">#555555</color>
+
+    <color name="aa_header_tabs_bg">#A71C21</color>
+
+    <color name="aa_header_txt_bg_selected">#FFFFFF</color>
+    <color name="aa_header_txt_bg_unselected">#FFFFFF</color>
+
+    <color name="aa_page_bg">#eaeaea</color>
+    <color name="news_item_bg">#EAEAEA</color>
+    <color name="news_item_fg">#FFFFFF</color>
+
+    <color name="news_item_ch">#21a6e0</color>
+    <color name="news_item_da">#696969</color>
+    <color name="news_item_ti">#000000</color>
+    <color name="news_item_fade_ti">#696969</color>
+    <color name="news_detail_description">#666666</color>
+
+    <color name="black_color_txt">#000000</color>
+
+    <color name="white_color_back">#FFFFFF</color>
+    <color name="search_background">#F3F3F3</color>
+    <color name="search_edit_background">#FFFFFF</color>
+
+    <color name="colorPrimary_nt">#2a3541</color>
+    <color name="colorPrimaryDark_nt">#2a3541</color>
+
+
+    <color name="aa_app_blue_nt">#A71C21</color>
+    <color name="aa_menu_bar_nt">#696969</color>
+    <color name="aa_menu_bar_trans_nt">#16202b</color>
+    <color name="aa_menu_bar_icon_nt">#727272</color>
+    <color name="aa_menu_line_nt">#e1e1e1</color>
+    <color name="aa_menu_text_nt">#696969</color>
+    <color name="aa_menu_text_selected_nt">#A71C21</color>
+
+    <color name="settings_txt_color_nt">#FFFFFF</color>
+    <color name="settings_txt_first_nt">#FFFFFF</color>
+    <color name="settings_bg_color_nt">#16202b</color>
+
+    <color name="settings_line_color_nt">#e1e1e1</color>
+
+    <color name="settings_page_list_header_nt">#242f39</color>
+    <color name="settings_page_list_tab_nt">#16202b</color>
+
+
+    <color name="open_in_browser_nt">#e1e1e1</color>
+    <color name="open_in_browser_line_nt">#969696</color>
+    <color name="open_in_browser_btn_clr_nt">#555555</color>
+    <color name="aa_header_tabs_bg_nt">#2a3541</color>
+    <color name="aa_page_bg_nt">#16202b</color>
+    <color name="news_item_bg_nt">#16202b</color>
+    <color name="news_item_fg_nt">#2a3541</color>
+
+    <color name="news_item_ch_nt">#FFFFFF</color>
+    <color name="news_item_da_nt">#FFFFFF</color>
+    <color name="news_item_ti_nt">#FFFFFF</color>
+    <color name="news_item_fade_ti_nt">#969696</color>
+    <color name="news_detail_description_nt">#FFFFFF</color>
+
+    <color name="black_color_txt_nt">#FFFFFF</color>
+    <color name="white_color_back_nt">#16202b</color>
+
+    <color name="aa_header_txt_bg_selected_nt">#FFFFFF</color>
+    <color name="aa_header_txt_bg_unselected_nt">#A71C21</color>
+
+    <color name="search_background_nt">#242f39</color>
+    <color name="search_edit_background_nt">#000000</color>
+
+
+    <color name="pop_bg">#60606060</color>
+    <color name="login_back">#f8f6f9</color>
+
+    <color name="aa_app_red">#A71C21</color>
+    <color name="app_theme_color">#851f83</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#606060</color>
+    <color name="ascent">#606060</color>
+
+
+
+
+</resources>

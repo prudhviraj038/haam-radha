@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11ffffff"
+        android:gravity="center"
+        android:id="@+id/progressBarfooter">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/progressBar3"
+            android:progressTintMode="add"
+            android:indeterminateDrawable="@drawable/progress_drawable"
+            android:indeterminate="true"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:text="End of News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_of_news"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/aa_app_blue"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/aa_app_blue"
+        android:gravity="center">
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.mamacgroup.hamtest.MyTextView1"
+            android:id="@+id/no_internet_header"
+            android:text="No Internet"
+            android:singleLine="true"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.mamacgroup.hamtest.MyTextView1"
+            android:id="@+id/no_internet_message"
+            android:text="no internet message" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/aa_app_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/no_internet_btn">
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.mamacgroup.hamtest.MyTextView1"
+            android:id="@+id/no_internet_btn_txt"
+            android:text="OK"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

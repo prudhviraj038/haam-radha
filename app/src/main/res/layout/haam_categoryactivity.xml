@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffd8e0cd">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#A71C21"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/setting_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back_btn_white" />
+
+            <ImageView
+                android:id="@+id/fav_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/star"
+                android:visibility="gone" />
+
+            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                android:id="@+id/tv_logo_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/haam_ham1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/haam_reload"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/reload_backup_cat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/haam_reload"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"></LinearLayout>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:fillViewport="true"
+            android:nestedScrollingEnabled="true"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/teeestt">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rl_cat1">
+
+                                <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/img1"
+                                    android:scaleType="centerCrop" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#55000000"
+                                    android:visibility="gone"
+                                    android:id="@+id/l_s_1"
+                                    android:layout_alignTop="@+id/img1"
+                                    android:layout_alignBottom="@+id/img1"
+                                    android:layout_alignLeft="@+id/img1"
+                                    android:layout_alignRight="@+id/img1"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical"
+                                    android:layout_alignTop="@+id/img1">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/tv1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="15dp"
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5"
+                                        android:textStyle="bold"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentBottom="true"
+                                    android:paddingBottom="20dp">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/des1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/img1"
+                                    android:layout_alignBottom="@+id/img1"
+                                    android:background="#ffffff"
+                                    android:layout_alignParentLeft="true"></LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:id="@+id/rl_cat2">
+
+                                <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/img2"
+                                    android:scaleType="centerCrop"
+                                    android:layout_centerInParent="true" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#55000000"
+                                    android:id="@+id/l_s_2"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/tv2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5"
+                                        android:textStyle="bold"/>
+                                    />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentBottom="true"
+                                    android:paddingBottom="10dp">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/des2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+
+                                        android:textColor="#ffffff"
+                                        android:textSize="15sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="#ffffff"
+                                    android:layout_alignLeft="@+id/img2"
+                                    android:layout_alignRight="@+id/img2"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentBottom="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:id="@+id/rl_cat3">
+
+                                <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/img3"
+                                    android:scaleType="centerCrop" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#55000000"
+                                    android:visibility="gone"
+                                    android:id="@+id/l_s_3" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/tv3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5"
+                                        android:textStyle="bold"/>
+                                    />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentBottom="true"
+                                    android:paddingBottom="10dp">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/des3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+
+                                        android:textColor="#ffffff"
+                                        android:textSize="15sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/rl_cat4">
+
+                            <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/img4"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#55000000"
+                                android:id="@+id/l_s_4"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="false"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                    android:id="@+id/tv4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#ffffff"
+                                    android:textSize="30sp"
+                                    android:shadowColor="#000"
+                                    android:shadowRadius="5"
+                                    android:textStyle="bold"/>
+                                />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="15dp">
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                    android:id="@+id/des4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+
+                                    android:textColor="#ffffff"
+                                    android:textSize="23sp"
+                                    android:shadowColor="#000"
+                                    android:shadowRadius="5" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff"
+                                android:layout_alignBottom="@+id/img4"
+                                android:layout_alignTop="@+id/img4"
+                                android:layout_alignParentRight="false"
+                                android:layout_alignParentLeft="true" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/rl_cat5">
+
+                            <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/img5"
+                                android:scaleType="centerCrop" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#55000000"
+                                android:visibility="gone"
+                                android:id="@+id/l_s_5" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="false"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                    android:id="@+id/tv5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#ffffff"
+                                    android:textSize="30sp"
+                                    android:shadowColor="#000"
+                                    android:shadowRadius="5"
+                                    android:textStyle="bold"/>
+                                />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="15dp">
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                    android:id="@+id/des5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+
+                                    android:textColor="#ffffff"
+                                    android:textSize="23sp"
+                                    android:shadowColor="#000"
+                                    android:shadowRadius="5" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/teeesttttt">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:id="@+id/rl_cat7">
+
+                                <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/img7"
+                                    android:scaleType="centerCrop"
+                                    android:layout_centerInParent="true" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#55000000"
+                                    android:id="@+id/l_s_7"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/tv7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5"
+                                        android:textStyle="bold"/>
+                                    />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentBottom="true"
+                                    android:paddingBottom="10dp">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/des7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+
+                                        android:textColor="#ffffff"
+                                        android:textSize="15sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="#ffffff"
+                                    android:layout_alignLeft="@+id/img7"
+                                    android:layout_alignRight="@+id/img7"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentBottom="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:id="@+id/rl_cat8">
+
+                                <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/img8"
+                                    android:scaleType="centerCrop" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#55000000"
+                                    android:visibility="gone"
+                                    android:id="@+id/l_s_8" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/tv8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5"
+                                        android:textStyle="bold"/>
+                                    />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentBottom="true"
+                                    android:paddingBottom="10dp">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/des8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+
+                                        android:textColor="#ffffff"
+                                        android:textSize="15sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rl_cat6">
+
+                                <com.mamacgroup.hamtest.HaamMerge.SqureImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/img6"
+                                    android:scaleType="centerCrop"
+                                    android:layout_alignParentRight="false" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#55000000"
+                                    android:visibility="gone"
+                                    android:id="@+id/l_s_6"
+                                    android:layout_alignTop="@+id/img6"
+                                    android:layout_alignBottom="@+id/img6"
+                                    android:layout_alignLeft="@+id/img6"
+                                    android:layout_alignRight="@+id/img6"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical"
+                                    android:layout_alignTop="@+id/img6">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/tv6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="15dp"
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5"
+                                        android:textStyle="bold"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentBottom="true"
+                                    android:paddingBottom="20dp">
+
+                                    <com.mamacgroup.hamtest.HaamMerge.MyTextViewBold
+                                        android:id="@+id/des6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+
+                                        android:textColor="#ffffff"
+                                        android:textSize="30sp"
+                                        android:shadowColor="#000"
+                                        android:shadowRadius="5" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/img6"
+                                    android:layout_alignBottom="@+id/img6"
+                                    android:background="#ffffff"
+                                    android:layout_alignParentLeft="false"
+                                    android:layout_alignParentRight="true"></LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+
+                </LinearLayout>
+                <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/catgridView"-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/catgridView"
+                    android:numColumns="2"
+                    android:background="#ffffff"
+                    android:layout_weight="1"
+                    android:horizontalSpacing="1dp"
+
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:id="@+id/progressBar_ll"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/progressBarrrrrrqwe"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/haam_loading" />
+            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading......"
+                android:id="@+id/pd_tv_cattt"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

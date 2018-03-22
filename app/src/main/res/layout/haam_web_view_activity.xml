@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A71C21"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:baselineAligned="false"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:divider="@drawable/divider_menu_icons_space"
+            android:showDividers="beginning|middle|end">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:id="@+id/wv_back_img"
+                android:src="@drawable/back_btn_white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView4" >
+
+        </WebView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:id="@+id/progressBar"
+            android:visibility="visible">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/progressBarrrrrr"
+                android:src="@drawable/loading"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="40dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

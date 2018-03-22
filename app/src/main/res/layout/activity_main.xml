@@ -1,0 +1,185 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/aa_page_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/aa_menu_line"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/backgroundColor"
+                android:baselineAligned="false"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        android:id="@+id/world_news_img"
+                        android:src="@drawable/news"
+                        android:adjustViewBounds="false" />
+
+                    <com.mamacgroup.naqshlatest.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="World"
+                        android:id="@+id/world_news_tv"
+                        android:textSize="@dimen/menu_text_size"
+                        android:textColor="@color/aa_menu_text"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/negative_margin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        android:id="@+id/sports_news_img"
+                        android:src="@drawable/sport"
+                        android:adjustViewBounds="false" />
+
+                    <com.mamacgroup.naqshlatest.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sports"
+                        android:id="@+id/sports_news_tv"
+                        android:singleLine="true"
+                        android:textSize="@dimen/menu_text_size"
+                        android:textColor="@color/aa_menu_text"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/negative_margin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        android:id="@+id/economy_news_img"
+                        android:src="@drawable/dollar" />
+
+                    <com.mamacgroup.naqshlatest.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Economy"
+                        android:id="@+id/economy_news_tv"
+                        android:singleLine="true"
+                        android:textSize="@dimen/menu_text_size"
+                        android:textColor="@color/aa_menu_text"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/negative_margin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        android:id="@+id/live_news_img"
+                        android:src="@drawable/live_tv_unse" />
+
+                    <com.mamacgroup.naqshlatest.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Live news"
+                        android:id="@+id/live_news_tv"
+                        android:singleLine="true"
+                        android:textSize="@dimen/menu_text_size"
+                        android:textColor="@color/aa_menu_text"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/negative_margin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        android:id="@+id/settings_img"
+                        android:src="@drawable/settings3" />
+
+                    <com.mamacgroup.naqshlatest.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:id="@+id/settings_news_tv"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textSize="@dimen/menu_text_size"
+                        android:textColor="@color/aa_menu_text"
+                        android:ellipsize="end"
+                        android:layout_marginTop="@dimen/negative_margin" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

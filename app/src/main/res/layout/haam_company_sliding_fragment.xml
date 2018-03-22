@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fsdgffjfgnjdfhf">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#A71C21"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/back_cs"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/haam_globe"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:id="@+id/fav_img_arc"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/haam_star_empty"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="2dp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                    android:id="@+id/tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fav_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/haam_search"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:id="@+id/slid_setting"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/haam_settings" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#11ffffff"
+                android:gravity="center"
+                android:id="@+id/progressBar_ll_sliding"
+                android:visibility="gone">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/progressBar_slid"
+                    android:src="@drawable/loading"
+                    android:layout_centerInParent="true" />
+                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading......"
+                    android:id="@+id/pd_tv__slid"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/view3"
+                    style="@style/TabLayoutTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    app:pstsIndicatorColor="#FFFFFF"
+                    app:pstsIndicatorHeight="3dp"
+                    android:background="#A71C21"
+                    android:textSize="20sp"/>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view4" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

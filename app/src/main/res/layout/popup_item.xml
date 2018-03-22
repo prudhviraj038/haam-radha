@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/news_item_fg">
+
+    <LinearLayout
+        android:id="@+id/click_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/forward_btn"
+            android:tint="?attr/black_color_text" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <com.mamacgroup.hamtest.MyBoldTextView
+                android:id="@+id/cat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="New Text"
+                android:textColor="?attr/black_color_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <view
+            android:id="@+id/cat_img"
+            class="de.hdodenhof.circleimageview.CircleImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/nwessss" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/news_item_bg"></LinearLayout>
+
+</LinearLayout>

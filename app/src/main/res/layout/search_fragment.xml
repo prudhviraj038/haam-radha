@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:baselineAligned="false"
+        android:padding="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4"
+            android:gravity="center_vertical"
+            android:divider="@drawable/divider_menu_icons_space"
+            android:showDividers="middle|beginning|end">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/search_back_btn"
+                android:src="@drawable/back_btn_white"
+                android:adjustViewBounds="false"
+                android:tint="?attr/icons_tint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="center" >
+
+            <com.mamacgroup.hamtest.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="world_fragment"
+                android:id="@+id/search_title"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout8"
+            android:gravity="center_vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView46"
+                android:src="@drawable/back_btn_white"
+                android:adjustViewBounds="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:divider="@drawable/divider_menu_icons_space"
+            android:showDividers="beginning|middle|end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/linearLayout5"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/menu_icon_size"
+                android:layout_height="@dimen/menu_icon_size"
+                android:id="@+id/set_btn"
+                android:src="@drawable/stngs_ic"
+                android:adjustViewBounds="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/search_background"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/search_edit_background"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView45"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/search_btn"
+                android:tint="?attr/serach_icons_tint" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_search"
+                android:background="#00000000"
+                android:hint="Type Here"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/aa_app_blue"
+                android:textColorHint="@color/aa_app_blue"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_holder">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/aa_header_tabs_bg">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/custom_header_layout"
+                    android:gravity="center"
+                    android:padding="0.5dp">
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView3"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:id="@+id/progressBar34"
+            android:focusableInTouchMode="false"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="50dp"
+                android:id="@+id/progressBarrr"
+                android:src="@drawable/output_progress"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <com.mamacgroup.hamtest.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/no_result_search"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

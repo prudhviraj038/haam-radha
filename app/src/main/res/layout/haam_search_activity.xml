@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#A71C21"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/back_cs_sr"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/back_btn_white"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+        <ImageView
+            android:id="@+id/fav_img_sr"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:src="@drawable/star" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                android:id="@+id/tittlee_sr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fav_search"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            android:adjustViewBounds="true"
+            android:src="@drawable/haam_search" />
+
+        <ImageView
+            android:id="@+id/slid_setting_sr"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/haam_settings"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/haam_red_rounded_corners_empty"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/et_search"
+                android:background="#00000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/img_sr"
+            android:src="@drawable/haam_search"
+            android:tint="#A71C21" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#11ffffff"
+        android:gravity="center"
+        android:id="@+id/progressBar_llll_sr"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/progressBarrw123sdr"
+            android:src="@drawable/loading"
+            android:layout_centerInParent="true" />
+        <com.mamacgroup.hamtest.HaamMerge.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading......"
+            android:id="@+id/pd_tv_cat_sr"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+        <com.mamacgroup.hamtest.HaamMerge.MyTextView
+            android:id="@+id/no_newss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No News related your search"
+            android:textColor="#A71C21"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_neews_sr"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="2"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"/>
+    </RelativeLayout>
+</LinearLayout>

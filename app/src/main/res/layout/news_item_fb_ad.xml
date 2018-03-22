@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/aaaaaa"
+    android:descendantFocusability="blocksDescendants"
+    android:background="?attr/news_item_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bbbbbbb"
+            android:padding="2dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <com.mamacgroup.hamtest.MyTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News News News"
+                android:id="@+id/news_title_ad"
+                android:textColor="?attr/news_item_ti"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <view
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    class="com.mamacgroup.hamtest.SquareImageview"
+                    android:id="@+id/view2"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/view2"
+                    android:layout_alignBottom="@+id/view2"
+                    android:layout_alignRight="@+id/view2"
+                    android:layout_alignLeft="@+id/view2"
+                    android:visibility="gone">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/ad_gif"
+                        android:visibility="gone"
+                        android:scaleType="fitCenter" />
+
+                    <com.mamacgroup.hamtest.SquareImageview
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/news_img_ad"
+                        android:src="@drawable/nwessss"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/video_hint_ad"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/video" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/publisherAdView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:descendantFocusability="blocksDescendants"
+                    android:focusableInTouchMode="false">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/news_img"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

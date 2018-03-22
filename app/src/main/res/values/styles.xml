@@ -1,0 +1,215 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.DayMode" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="backgroundColor">@color/aa_menu_bar_trans</item>
+
+        <item name="aa_app_blue">@color/aa_app_blue</item>
+        <item name="aa_menu_bar">@color/aa_menu_bar</item>
+        <item name="aa_menu_bar_trans">@color/aa_menu_bar_trans</item>
+        <item name="aa_menu_bar_icon">@color/aa_menu_bar_icon</item>
+        <item name="aa_menu_line">@color/aa_menu_line</item>
+        <item name="aa_menu_text">@color/aa_menu_text</item>
+        <item name="aa_menu_text_selected">@color/aa_menu_text_selected</item>
+        <item name="settings_txt_color">@color/settings_txt_first</item>
+        <item name="settings_txt_first">@color/settings_txt_first</item>
+        <item name="settings_bg_color">@color/settings_bg_color</item>
+        <item name="settings_line_color">@color/aa_app_blue</item>
+        <item name="settings_page_list_header">@color/settings_page_list_header</item>
+        <item name="settings_page_list_tab">@color/settings_page_list_tab</item>
+
+        <item name="open_in_browser">@color/open_in_browser</item>
+        <item name="open_in_browser_line">@color/open_in_browser_line</item>
+        <item name="open_in_browser_btn_clr">@color/open_in_browser_btn_clr</item>
+
+        <item name="aa_header_tabs_bg">@color/aa_header_tabs_bg</item>
+
+
+        <item name="aa_page_bg">@color/aa_page_bg</item>
+        <item name="news_item_bg">@color/news_item_bg</item>
+        <item name="news_item_fg">@color/news_item_fg</item>
+
+        <item name="news_item_ch">@color/news_item_ch</item>
+        <item name="news_item_da">@color/news_item_da</item>
+        <item name="news_item_ti">@color/news_item_ti</item>
+        <item name="news_item_fade_ti">@color/news_item_fade_ti</item>
+        <item name="news_detail_description">@color/news_detail_description</item>
+
+        <item name="icons_tint">#FFFFFF</item>
+        <item name="serach_icons_tint">#696969</item>
+
+        <item name="black_color_text">@color/black_color_txt</item>
+        <item name="white_color_back">@color/white_color_back</item>
+        <item name="search_background">@color/search_background</item>
+        <item name="search_edit_background">@color/search_edit_background</item>
+
+        <item name="colorAccent">#FF0000</item>
+        <item name="login_back">#ffffff</item>
+        <item name="pure_back">#ffffff</item>
+        <!-- Customize your theme here. -->
+
+        <item name="login_bg_color">#ffffff</item>
+        <item name="login_border_color">#d1d1d1</item>
+        <item name="new_acc_bg_color">#f8f6f9</item>
+    </style>
+
+
+
+
+    <style name="AppTheme.NightMode" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary_nt</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_nt</item>
+
+
+        <item name="backgroundColor">@color/aa_menu_bar_trans_nt</item>
+
+        <item name="aa_app_blue">@color/aa_app_blue_nt</item>
+        <item name="aa_menu_bar">@color/aa_menu_bar_nt</item>
+        <item name="aa_menu_bar_trans">@color/aa_menu_bar_trans_nt</item>
+        <item name="aa_menu_bar_icon">@color/aa_menu_bar_icon_nt</item>
+        <item name="aa_menu_line">@color/aa_menu_line_nt</item>
+        <item name="aa_menu_text">@color/aa_menu_text_nt</item>
+        <item name="aa_menu_text_selected">@color/aa_menu_text_selected_nt</item>
+        <item name="settings_txt_color">@color/settings_txt_first_nt</item>
+        <item name="settings_txt_first">@color/settings_txt_first_nt</item>
+        <item name="settings_bg_color">@color/settings_bg_color_nt</item>
+        <item name="settings_line_color">@color/aa_app_blue_nt</item>
+        <item name="settings_page_list_header">@color/settings_page_list_header_nt</item>
+        <item name="settings_page_list_tab">@color/settings_page_list_tab_nt</item>
+
+        <item name="open_in_browser">@color/open_in_browser_nt</item>
+        <item name="open_in_browser_line">@color/open_in_browser_line_nt</item>
+        <item name="open_in_browser_btn_clr">@color/open_in_browser_btn_clr_nt</item>
+        <item name="aa_header_tabs_bg">@color/aa_header_tabs_bg_nt</item>
+
+
+        <item name="aa_page_bg">@color/aa_page_bg_nt</item>
+        <item name="news_item_bg">@color/news_item_bg_nt</item>
+        <item name="news_item_fg">@color/news_item_fg_nt</item>
+
+        <item name="news_item_ch">@color/news_item_ch_nt</item>
+        <item name="news_item_da">@color/news_item_da_nt</item>
+        <item name="news_item_ti">@color/news_item_ti_nt</item>
+        <item name="news_item_fade_ti">@color/news_item_fade_ti_nt</item>
+        <item name="news_detail_description">@color/news_detail_description_nt</item>
+
+        <item name="icons_tint">@color/aa_app_blue</item>
+        <item name="serach_icons_tint">@color/aa_app_blue</item>
+
+        <item name="black_color_text">@color/black_color_txt_nt</item>
+        <item name="white_color_back">@color/white_color_back_nt</item>
+
+        <item name="search_background">@color/search_background_nt</item>
+        <item name="search_edit_background">@color/search_edit_background_nt</item>
+
+
+        <item name="colorAccent">#FF0000</item>
+        <item name="login_back">@color/settings_bg_color_nt</item>
+        <item name="pure_back">#ffffff</item>
+        <!-- Customize your theme here. -->
+
+        <item name="login_bg_color">@color/settings_bg_color_nt</item>
+        <item name="login_border_color">#ffffff</item>
+        <item name="new_acc_bg_color">@color/settings_bg_color_nt</item>
+    </style>
+
+    <style name="ToolTipLayoutDefaultStyle">
+        <item name="ttlm_padding">@dimen/ttlm_default_padding</item>
+        <item name="ttlm_strokeColor">@android:color/transparent</item>
+        <item name="ttlm_backgroundColor">?attr/colorAccent</item>
+        <item name="ttlm_strokeWeight">@dimen/ttlm_default_stroke_weight</item>
+        <item name="ttlm_cornerRadius">@dimen/ttlm_default_corner_radius</item>
+        <item name="ttlm_arrowRatio">1.4</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="ttlm_overlayStyle">@style/ToolTipOverlayDefaultStyle</item>
+        <item name="ttlm_elevation">@dimen/ttlm_default_elevation</item>
+    </style>
+
+    <style name="ToolTipOverlayDefaultStyle">
+        <item name="android:color">?attr/colorAccent</item>
+        <item name="ttlm_repeatCount">99</item>
+        <item name="ttlm_duration">600</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+
+
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="MaterialAnimations" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:colorAccent">@android:color/black</item>
+        <!--<item name="android:windowContentTransitions">true</item>-->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">false</item>-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+
+    </style>
+
+    <style name="MaterialAnimations.Red" parent="MaterialAnimations">
+
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--<style name="AppTheme.DayMode.">-->
+        <!--<item name="colorAccent">@color/white</item> &lt;!&ndash; Whatever color you want&ndash;&gt;-->
+    <!--</style>-->
+
+
+
+
+</resources>

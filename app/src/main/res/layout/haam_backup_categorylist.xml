@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:id="@+id/progressBar_llll"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/progressBarrwr"
+            android:src="@drawable/loading"
+            android:layout_centerInParent="true" />
+        <com.mamacgroup.hamtest.HaamMerge.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading......"
+            android:id="@+id/pd_tv_catttttt"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refresh_arc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_neews"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="2"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <com.mamacgroup.hamtest.HaamMerge.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No News in this category"
+            android:id="@+id/no_arc_tv"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

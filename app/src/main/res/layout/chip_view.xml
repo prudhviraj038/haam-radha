@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="4dp"
+            android:layout_width="100dp"
+            android:layout_height="130dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/chipImageView"
+                android:adjustViewBounds="false"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/chipTextView"
+                android:textColor="@color/aa_app_blue"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/like_icon"
+                android:src="@drawable/like"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

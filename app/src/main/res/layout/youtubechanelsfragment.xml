@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:divider="@drawable/divider_menu_icons_space"
+                android:showDividers="beginning|middle|end">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/back_btn"
+                    android:src="@drawable/back_btn_white"
+                    android:tint="?attr/icons_tint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:gravity="center" >
+
+                <com.mamacgroup.hamtest.MyBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Sources"
+                    android:id="@+id/label1"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider_menu_icons_space"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="beginning|middle|end"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/set_btn"
+                    android:layout_width="22dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/stngs_ic"
+                    android:tint="?attr/icons_tint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

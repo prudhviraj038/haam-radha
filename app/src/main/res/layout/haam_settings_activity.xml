@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/kk">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A71C21"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:baselineAligned="false"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:divider="@drawable/divider_menu_icons_space"
+            android:showDividers="beginning|middle|end"
+            android:id="@+id/linearLayout6" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/back_btn"
+                android:src="@drawable/back_btn_white"
+                android:adjustViewBounds="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:id="@+id/settings_head_tv"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:divider="@drawable/divider_menu_icons_space"
+            android:showDividers="beginning|middle|end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/linearLayout7"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView20"
+                android:src="@drawable/back_btn"
+                android:adjustViewBounds="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:background="#d3d3d3">
+
+                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:id="@+id/settings_tv"
+                    android:textColor="#A71C21"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/change_language">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/font_size_btn">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="@dimen/menu_icon_size"
+                                android:layout_height="@dimen/menu_icon_size"
+                                android:id="@+id/imageView31"
+                                android:padding="5dp"
+                                android:src="@drawable/forward_btn"
+                                android:visibility="gone" />
+
+                            <Switch
+                                android:id="@+id/notification_switch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textOn="ON"
+                                android:textOff="OFF"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:thumb="@drawable/customswitchselector"
+                                android:track="@drawable/customtrack"/>
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Urgent News Notification"
+                                android:id="@+id/urgent_news_tv"
+                                android:layout_weight="1"
+                                android:gravity="right" />
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/haam_notifications30"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#e1e1e1"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="@dimen/menu_icon_size"
+                                android:layout_height="@dimen/menu_icon_size"
+                                android:id="@+id/imageView33"
+                                android:padding="5dp"
+                                android:src="@drawable/forward_btn"
+                                android:visibility="gone" />
+
+                            <Switch
+                                android:id="@+id/sound_switch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textOn="ON"
+                                android:textOff="OFF"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:thumb="@drawable/customswitchselector"
+                                android:track="@drawable/customtrack"/>
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Notification Sound"
+                                android:id="@+id/notify_tv"
+                                android:layout_weight="1"
+                                android:gravity="right" />
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/haam_sound30"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/select_sources_for_notify">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/forward_btn"
+                                android:tint="#000" />
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Select Categories to get Urgent"
+                                android:id="@+id/select_sources_tv"
+                                android:layout_weight="1"
+                                android:gravity="right" />
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/haam_seclctnotfication"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#e1e1e1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d3d3d3"
+                android:gravity="right">
+
+                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ham App"
+                    android:id="@+id/app_tv"
+                    android:textColor="#A71C21"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/contact_us">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/forward_btn"
+                                android:tint="#000" />
+
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Contact Us"
+                                android:id="@+id/contact_us_tv"
+                                android:layout_weight="1"
+                                 
+                                android:gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView21"
+                                android:src="@drawable/haam_phone30"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#e1e1e1"
+                            android:layout_marginLeft="10dp"></LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/facebook_link">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/forward_btn"
+                                android:tint="#000" />
+
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Facebook"
+                                android:id="@+id/facebook_tv"
+                                android:layout_weight="1"
+                                 
+                                android:gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView25"
+                                android:src="@drawable/facebook_icon"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#e1e1e1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/twitter_link">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/forward_btn"
+                                android:tint="#000" />
+
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Twitter"
+                                android:id="@+id/twitter_tv"
+                                android:layout_weight="1"
+                                 
+                                android:gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView"
+                                android:src="@drawable/twitter_ic"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:background="#e1e1e1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/instagram_link">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/forward_btn"
+                                android:tint="#000" />
+
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text=" Instagram"
+                                android:id="@+id/instagram_tv"
+                                android:layout_weight="1"
+                                 
+                                android:gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView3"
+                                android:src="@drawable/instagram_ic"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:background="#e1e1e1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/rating_link"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rating Ham App"
+                                android:id="@+id/rating_tv"
+                                android:layout_weight="1"
+                                 
+                                android:gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView5"
+                                android:src="@drawable/rating_ic"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:background="#e1e1e1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/add_source_link">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/forward_btn"
+                                android:tint="#000" />
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Report Bug"
+                                android:id="@+id/bug_tv"
+                                android:layout_weight="1"
+                                 
+                                android:gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView7"
+                                android:src="@drawable/haam_bug30"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:background="#e1e1e1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/report_bug_link"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/forward_btn"
+                                android:tint="#000" />
+
+
+                            <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Report Bug"
+                                android:id="@+id/bug_tvvv"
+                                android:layout_weight="1"
+                                 
+                                android:gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView9"
+                                android:src="@drawable/error_ic"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:background="#e1e1e1"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d3d3d3"
+                android:gravity="right">
+
+                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share App"
+                    android:id="@+id/share_tv"
+                    android:textColor="#A71C21"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/whatsup_share">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp">
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/forward_btn"
+                                    android:tint="#000" />
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Watsapp"
+                                    android:id="@+id/watspp_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView23"
+                                    android:src="@drawable/wahatsapp_icon"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/facebook_share">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/forward_btn"
+                                    android:tint="#000" />
+
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facebook"
+                                    android:id="@+id/facebook_share_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView11"
+                                    android:src="@drawable/facebook_icon"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/twitter_share">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp">
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/forward_btn"
+                                    android:tint="#000" />
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Twitter"
+                                    android:id="@+id/twitter_share_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView13"
+                                    android:src="@drawable/twitter_ic"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/instagram_share">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp">
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/forward_btn"
+                                    android:tint="#000" />
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Instagram"
+                                    android:id="@+id/instagram_share_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView15"
+                                    android:src="@drawable/instagram_ic"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/google_share"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp">
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Google Plus"
+                                    android:id="@+id/google_share_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView17"
+                                    android:src="@drawable/google_plus"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/linkdin_share"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp" >
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="linkedin"
+                                    android:id="@+id/linked_share_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView36"
+                                    android:src="@drawable/linkedin_ic"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/email_share">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp" >
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/forward_btn"
+                                    android:tint="#000" />
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email"
+                                    android:id="@+id/email_share_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView38"
+                                    android:src="@drawable/haam_email30"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/sms_share"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/forward_btn"
+                                    android:tint="#000" />
+
+
+                                <com.mamacgroup.hamtest.HaamMerge.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="sms"
+                                    android:id="@+id/sms_share_tv"
+                                    android:layout_weight="1"
+                                     
+                                    android:gravity="right"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:id="@+id/imageView27"
+                                    android:src="@drawable/sms_ic"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#e1e1e1"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

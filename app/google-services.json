@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "319156220809",
+    "firebase_url": "https://ham-app-1b36b.firebaseio.com",
+    "project_id": "ham-app-1b36b",
+    "storage_bucket": "ham-app-1b36b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319156220809:android:c11b3f4f752406e0",
+        "android_client_info": {
+          "package_name": "com.mamacgroup.ham"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319156220809-h7rb9rmbe7jb25irp3pu5piq6g03otie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvgP3oAtLo-r9lSdbuhkcTJReqpGSZTyM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
