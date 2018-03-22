@@ -129,7 +129,10 @@ public class NewsRecycleListActivity extends BaseActivity implements
         AccountFragment.FragmentTouchListner,
         LiveTvFragment.FragmentTouchListner,
         SearchFragment.FragmentTouchListner,
-        NotifySourcesFragment.FragmentTouchListner, MySourcesFragment.FragmentTouchListner, YoutubeChanelsFragment.FragmentTouchListner {
+        NotifySourcesFragment.FragmentTouchListner,
+        MySourcesFragment.FragmentTouchListner,
+        YoutubeChanelsFragment.FragmentTouchListner,
+        VideoCateDetailpage.FragmentTouchListner {
 
 
 
@@ -528,7 +531,7 @@ public class NewsRecycleListActivity extends BaseActivity implements
         youtube_chanels = new ArrayList<>();
 
         youtube_adapter = new MultiViewTypeAdapterCategory(youtube_categories,this,this);
-        youtubeChannelsAdapter = new YoutubeChannelsAdapter(this,youtube_chanels);
+        youtubeChannelsAdapter = new YoutubeChannelsAdapter(this,youtube_chanels,this);
         channel_adapter = new MultiViewTypeAdapterChannels(chanels,NewsRecycleListActivity.this,this);
 
        // adapter.setHasStableIds(true);
@@ -1853,6 +1856,20 @@ ArrayList<YoutubeCategories> youtube_categories;
                 .commit();
     }
 
+
+    @Override
+    public void to_video_frg(VideoChanel videoChanel) {
+        Fragment main_fragmnet = new VideoCateDetailpage();
+        Bundle args = new Bundle();
+        args.putSerializable("chanel",videoChanel);
+        main_fragmnet.setArguments(args);
+        viewFlipper.setDisplayedChild(1);
+        fragmentManager.beginTransaction()
+                .replace(R.id.content_frame, main_fragmnet).addToBackStack(null)
+                .commit();
+
+
+    }
 
     @Override
     public void back() {
@@ -3316,7 +3333,7 @@ try {
 
 
     public void  data(JSONArray jsonArray){
-
+        categories.clear();
         try {
             for (int i = 0; i < jsonArray.length(); i++) {
                 Log.e("sizeeee", String.valueOf(jsonArray.length()));

@@ -20,14 +20,14 @@ import java.util.ArrayList;
  * Created by mac on 2/3/17.
  */
 
-public class YoutubeChannelsAdapter extends RecyclerView.Adapter<YoutubeChannelsAdapter.SimpleViewHolder> {
+public class YoutubeChannelsAdapter2 extends RecyclerView.Adapter<YoutubeChannelsAdapter2.SimpleViewHolder> {
     private static final int COUNT = 100;
 
     private final Context mContext;
     private int mCurrentItemId = 0;
     ArrayList<VideoChanel> categories;
-    MainActivity mCallback;
-    NewsRecycleListActivity newsRecycleListActivity;
+    YoutubeChanelsFragment.FragmentTouchListner mCallBack;
+
     public static class SimpleViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;
@@ -41,10 +41,10 @@ public class YoutubeChannelsAdapter extends RecyclerView.Adapter<YoutubeChannels
         }
     }
 
-    public YoutubeChannelsAdapter(Context context, ArrayList<VideoChanel> categories, NewsRecycleListActivity newsRecycleListActivity) {
+    public YoutubeChannelsAdapter2(Context context, ArrayList<VideoChanel> categories, YoutubeChanelsFragment.FragmentTouchListner mCallBack) {
         mContext = context;
         this.categories = categories;
-        this.newsRecycleListActivity = newsRecycleListActivity;
+        this.mCallBack = mCallBack;
 
     }
 
@@ -69,7 +69,7 @@ public class YoutubeChannelsAdapter extends RecyclerView.Adapter<YoutubeChannels
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                newsRecycleListActivity.to_video_frg(categories.get(position));
+                mCallBack.to_video_frg(categories.get(position));
             }
         });
 

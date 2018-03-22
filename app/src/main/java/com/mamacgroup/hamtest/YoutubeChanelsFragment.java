@@ -46,12 +46,13 @@ public class YoutubeChanelsFragment extends Fragment {
 
     ArrayList<VideoChanel> categories;
     FragmentTouchListner mCallBack;
-    YoutubeChannelsAdapter youtubeChannelsAdapter;
+    YoutubeChannelsAdapter2 youtubeChannelsAdapter;
     TextView label;
 
     RecyclerView  recyclerView;
 
     public interface FragmentTouchListner {
+        public  void to_video_frg(VideoChanel videoChanel);
         public  void back();
         public void catselected(Categories categories);
         public void setselected(String index);
@@ -117,7 +118,7 @@ public class YoutubeChanelsFragment extends Fragment {
 
         }
 
-        youtubeChannelsAdapter = new YoutubeChannelsAdapter(getContext(),categories);
+        youtubeChannelsAdapter = new YoutubeChannelsAdapter2(getContext(),categories,mCallBack);
 
         recyclerView.setAdapter(youtubeChannelsAdapter);
 
